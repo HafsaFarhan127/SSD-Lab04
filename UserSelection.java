@@ -24,7 +24,7 @@ public class UserSelection {
         loginLayout.setPadding(new Insets(10));
         //User Input Label
         Label userInput=new Label("Enter a command number from 1-5 to showcase that command's syntax and info:");
-        Label.setWrapText(true); // Enable text wrapping
+        userInput.setWrapText(true); // Enable text wrapping
         Button detailsButton = new Button("Show me the deets");
 
 
@@ -38,7 +38,7 @@ public class UserSelection {
 
             }
         });
-        loginLayout.getChildren().addAll(new Label("Enter a command number from 1-5 to showcase that command's syntax and info:"), selectionField,
+        loginLayout.getChildren().addAll(userInput, selectionField,
                 detailsButton);  //here i added a label to show OR and then i associated the sign up button i created.
 
         selectionScene = new Scene(loginLayout, 300, 200);
