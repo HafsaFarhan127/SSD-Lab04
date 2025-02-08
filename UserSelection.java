@@ -24,7 +24,7 @@ public class UserSelection {
         loginLayout.setPadding(new Insets(10));
         //User Input Label
         Label userInput=new Label("Enter a command number from 1-5 to showcase that command's syntax and info:");
-        label.setWrapText(true); // Enable text wrapping
+        Label.setWrapText(true); // Enable text wrapping
         Button detailsButton = new Button("Show me the deets");
 
 
